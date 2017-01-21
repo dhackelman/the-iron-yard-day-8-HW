@@ -1,0 +1,8 @@
+// Reset document with partials import
+@import "partials/reset";
+//Set a few key styles/colors/etc. with new global file
+@import "partials/base";
+//Set a few key styles/colors/etc. with new global file
+@import "partials/layouts";
+//Set a few key styles/colors/etc. with new global file
+@import "partials/modules";

@@ -1,0 +1,122 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-with: 100%;
+  width: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000000;
+  margin: 0 auto; }
+
+h1 {
+  color: #ffffff;
+  font-size: 5rem;
+  padding: 0; }
+
+img {
+  width: 100%; }
+
+.header {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.content-holder {
+  overflow: hidden; }
+
+.primary-content {
+  background-color: red;
+  float: left;
+  margin: 0 auto;
+  width: 70%; }
+
+.secondary-content {
+  background-color: blue;
+  float: left;
+  margin: 0 auto;
+  width: 30%; }
+
+.header-image {
+  background-image: url(../images/shark-wave.jpg);
+  background-size: cover;
+  float: left;
+  min-height: 450px;
+  width: 100%; }
+
+.navy-overlay {
+  align-items: center;
+  background-color: rgba(24, 45, 107, 0.5);
+  background-size: auto;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 5; }
+
+.primary-content {
+  padding: 10%;
+  display: flex;
+  justify-content: center; }
+
+.secondary-content {
+  padding: 10%;
+  display: flex;
+  justify-content: center; }
+
+/*# sourceMappingURL=main.css.map */

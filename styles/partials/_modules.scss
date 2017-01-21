@@ -1,0 +1,33 @@
+//modules (discrete & movable components)
+.header-image {
+  background-image: url(../images/shark-wave.jpg);
+  background-size: cover;
+  float: left;
+  min-height: 450px;
+  width: 100%;
+}
+.navy-overlay {
+  align-items: center;
+  background-color: $navy-overlay;
+  background-size: auto;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 5;
+}
+
+.primary-content {
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+}
+.secondary-content{
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+}

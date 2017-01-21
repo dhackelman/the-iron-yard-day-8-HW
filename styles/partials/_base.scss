@@ -1,0 +1,31 @@
+//styling base elements of the page (body, form, a, etc. )
+$primary-font: 'Raleway', sans-serif;
+$navy-ish: #234155;
+$navy-overlay: rgba(24, 45, 107, .5);
+$shallow-water: #56A1D5;
+$sky-blue: #9FC5E2;
+$white: #ffffff;
+$old-man-gray: #ACB6C2;
+$black: #000000;
+$imgPath: "../images/";
+
+
+
+body {
+  color: $white;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $black;
+  margin: 0 auto;
+}
+
+h1 {
+  color: $white;
+  font-size: 5rem;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
