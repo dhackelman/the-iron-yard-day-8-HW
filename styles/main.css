@@ -60,10 +60,14 @@ body {
   color: #000000;
   margin: 0 auto; }
 
-h1 {
-  color: #ffffff;
+h1, h2 {
+  color: #234155;
   font-size: 5rem;
   padding: 0; }
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700; }
 
 img {
   width: 100%; }
@@ -73,19 +77,18 @@ img {
   position: relative;
   width: 100%; }
 
-.content-holder {
-  overflow: hidden; }
+.content-holder, .posts-gallery, .footer {
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%; }
 
-.primary-content {
-  background-color: red;
+.primary-content, .secondary-content {
   float: left;
   margin: 0 auto;
   width: 70%; }
 
 .secondary-content {
-  background-color: blue;
-  float: left;
-  margin: 0 auto;
   width: 30%; }
 
 .header-image {
@@ -108,15 +111,52 @@ img {
   text-align: center;
   width: 100%;
   z-index: 5; }
+  .navy-overlay h1 {
+    color: #ffffff; }
 
-.primary-content {
-  padding: 10%;
-  display: flex;
-  justify-content: center; }
+.primary-content, .secondary-content {
+  background-color: #ffffff;
+  padding: 2%; }
+  .primary-content h1, .secondary-content h1 {
+    color: #234155; }
 
 .secondary-content {
-  padding: 10%;
+  background-color: blue; }
+
+.posts-gallery {
+  position: relative;
+  margin: 0 auto; }
+
+.posts-gallery-headline {
+  margin: 0 auto;
+  width: 50%; }
+
+.post {
+  margin: 0 auto;
+  width: 25%; }
+  .post img {
+    height: 100%; }
+
+.no-1 .navy-filter, .no-2 .navy-filter, .no-3 .navy-filter, .no-4 .navy-filter {
+  background-color: rgba(24, 45, 107, 0.5);
+  background-size: auto;
+  color: #ACB6C2;
   display: flex;
-  justify-content: center; }
+  height: 100%;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  width: 25%; }
+.no-1 .post-title, .no-2 .post-title, .no-3 .post-title, .no-4 .post-title {
+  align-self: flex-end;
+  color: #56A1D5;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  width: 90%; }
+
+.footer {
+  background-color: #234155;
+  padding: 2%; }
 
 /*# sourceMappingURL=main.css.map */

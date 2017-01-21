@@ -6,3 +6,5 @@
 @import "partials/layouts";
 //Set a few key styles/colors/etc. with new global file
 @import "partials/modules";
+//Change styles based on user interactions OR @media
+@import "partials/modules-modifiers";

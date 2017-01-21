@@ -20,11 +20,17 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  color: $white;
+h1, h2 {
+  color: $navy-ish;
   font-size: 5rem;
   padding: 0;
 }
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
 
 img {
   width: 100%;
