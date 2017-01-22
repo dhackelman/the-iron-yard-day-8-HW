@@ -6,7 +6,8 @@
   min-height: 450px;
   width: 100%;
 }
-.navy-overlay {
+
+.navy-overlay-header {
   align-items: center;
   background-color: $navy-overlay;
   background-size: auto;
@@ -22,25 +23,216 @@
 
   h1 {
     color: $white;
+    line-height: 0.75;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $shallow-water;
+    font-weight: 700;
   }
 }
+
+.nav-bar-trans {
+  background-color: transparent;
+  min-height: 30px;
+  position: absolute;
+  overflow: hidden;
+  left: 5%;
+  top: 3%;
+  width: 90%;
+
+  .fa {
+    color: $navy-ish;
+    font-size: 1.5rem;
+    padding: 0 2%;
+
+    span {
+      margin: 0 5%;
+      font-family: $primary-font;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+}
+
 
 .primary-content, .secondary-content {
   background-color: $white;
-  padding: 2%;
+  padding: 5%;
 
-  h1 {
+  h2 {
     color: $navy-ish;
+    line-height: .8;
+    text-transform: capitalize;
+  }
+
+  p {
+    margin: 5% auto;
   }
 }
 
+.sub-headline {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
 
+  .author-info {
+    color: $navy-ish;
+    font-weight: 700;
+    margin: 0 2%;
+  }
 
+  .article-info {
+    color: $old-man-gray;
+    font-weight: 300;
+    margin: 0 2%;
+  }
 
+  .catch-blue-overlay {
+    margin: 2%;
+    position: relative;
+    width: 6%;
 
-.secondary-content {
-  background-color: blue;
+    .author-blue-overlay {
+      background-color: $navy-overlay;
+      border-radius: 50%;
+      height: 88%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
 }
+
+.blockquote-khaled {
+  border-left: 3px solid $old-man-gray;
+  color: $shallow-water;
+  font-size: 2rem;
+  margin: 2% 0;
+  padding-left: 5%;
+  text-transform: uppercase;
+}
+
+.button-holder {
+  align-items: center;
+  display: flex;
+  width: 100%;
+
+  .fa {
+    background-color: $navy-ish;
+    color: $white;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1%;
+  }
+  .btn {
+    background-color: $old-man-gray;
+    color: white;
+    font-family: $primary-font;
+    font-size: .8rem;
+    font-weight: 700;
+    margin: 0 5% 0 0;
+    padding: 1.333%;
+    text-align: center;
+    width: 20%;
+  }
+}
+
+.author-face {
+  border-radius: 50%;
+  margin: 0;
+  width: 100%;
+}
+
+.aside-author-info {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 15%;
+
+  .catch-blue-overlay {
+    margin: 2%;
+    position: relative;
+    width: 30%;
+
+    .author-blue-overlay {
+      background-color: $navy-overlay;
+      border-radius: 50%;
+      height: 95%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .aside-author-name, .aside-soc-med {
+    color: $navy-ish;
+    font-weight: 700;
+    line-height: 2;
+    text-align: center;
+    width: 100%;
+    a {
+      color: $old-man-gray;
+      text-decoration: none;
+      padding: 0 2%;
+    }
+  }
+
+}
+
+.advertisement {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5% auto;
+  width: 90%;
+
+  .catch-blue-overlay {
+    position: relative;
+
+    span {
+      bottom: -5%;
+      color: $old-man-gray;
+      position: absolute;
+      right: 0;
+      text-decoration: underline;
+    }
+  }
+
+  .blue-ad {
+    width: 100%;
+  }
+
+  .blue-ad-overlay {
+    background-color: $navy-overlay;
+    position: absolute;
+    height: 98%;
+    top: 0;
+    left:0;
+    width: 100%;
+  }
+}
+
+.sidebar {
+  color: $old-man-gray;
+  margin-top: 15%;
+}
+
 
 .posts-gallery {
   position: relative;
@@ -49,7 +241,8 @@
 
 .posts-gallery-headline {
   margin: 0 auto;
-  width: 50%;
+  text-align: center;
+  width: 100%;
 }
 
 .post {
@@ -64,7 +257,6 @@
 .no-1, .no-2, .no-3, .no-4 {
   .navy-filter {
     background-color: $navy-overlay;
-    background-size: auto;
     color: $old-man-gray;
     display: flex;
     height: 100%;
@@ -85,8 +277,39 @@
 }
 
 
-
 .footer {
+  align-items: center;
   background-color: $navy-ish;
-  padding: 2%;
+  color: $old-man-gray;
+  display: flex;
+  flex-wrap: nowrap;
+  max-height: 90px;
+  width: 100%;
+
+  .logo-sm {
+    margin: 2% 2% 2% 10%;
+    width: 5%;
+  }
+
+}
+
+.footer-nav-list {
+  margin: 0 1% 0 40%;
+  width: 20%;
+
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+
+    li {
+      border-right: 1px solid $old-man-gray;
+      display: inline-block;
+      padding: 2%;
+    }
+
+    li:nth-child(4){
+      border-right: 0;
+    }
+  }
 }
