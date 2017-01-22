@@ -309,8 +309,9 @@ img {
 .no-1 .navy-filter:hover, .no-2 .navy-filter:hover, .no-3 .navy-filter:hover, .no-4 .navy-filter:hover {
   background-color: transparent; }
 .no-1 .navy-filter:hover > .post-title, .no-2 .navy-filter:hover > .post-title, .no-3 .navy-filter:hover > .post-title, .no-4 .navy-filter:hover > .post-title {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #ffffff; }
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  width: 100%; }
 
 .footer {
   align-items: center;
