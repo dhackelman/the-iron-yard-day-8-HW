@@ -274,6 +274,17 @@
     line-height: 1;
     width: 90%;
   }
+
+  .navy-filter:hover {
+    background-color: transparent;
+  }
+
+  .navy-filter:hover > .post-title {
+    background-color: rgba(0,0,0, 0.5);
+    color: $white;
+  }
+
+
 }
 
 
