@@ -1,0 +1,7 @@
+@mixin bp($point) {
+
+    @if $point == medium {
+      @media screen and (min-width: 750px) { @content; }
+    }
+
+}

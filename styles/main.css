@@ -302,13 +302,13 @@ img {
 .posts-gallery-headline {
   margin: 0 auto;
   text-align: center;
-  width: 100%; }
+  width: 99%; }
 
 .post {
   margin: 0 auto;
-  width: 25%; }
+  width: 100%; }
   .post img {
-    height: 100%; }
+    max-height: 160px; }
   .post a:hover, .post a:focus .navy-filter {
     border: 2px solid yellow; }
 

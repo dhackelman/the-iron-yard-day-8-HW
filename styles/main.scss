@@ -1,3 +1,5 @@
+@import "partials/bp";
+
 // Reset document with partials import
 @import "partials/reset";
 //Set a few key styles/colors/etc. with new global file
@@ -16,3 +18,4 @@
 @import "partials/posts-gallery";
 // Footer
 @import "partials/footer";
+//Include BP info
