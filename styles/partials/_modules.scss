@@ -47,12 +47,18 @@
     font-size: 1.5rem;
     padding: 0 2%;
 
+    a:link, a:visited, a:hover, a:active {
+      color: $navy-ish;
+      text-decoration: none;
+    }
+
     span {
       margin: 0 5%;
       font-family: $primary-font;
       font-size: 1rem;
       font-weight: 700;
       text-transform: uppercase;
+      text-decoration: none;
     }
   }
 
@@ -61,7 +67,7 @@
   }
 
   .right {
-    float: right;
+    float: left;
   }
 
 }
