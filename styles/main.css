@@ -127,9 +127,11 @@ img {
 
 .nav-bar-trans {
   background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   min-height: 30px;
   position: absolute;
-  overflow: hidden;
   left: 5%;
   top: 3%;
   width: 90%; }
@@ -137,16 +139,19 @@ img {
     color: #234155;
     font-size: 1.5rem;
     padding: 0 2%; }
+    .nav-bar-trans .fa a:link, .nav-bar-trans .fa a:visited, .nav-bar-trans .fa a:hover, .nav-bar-trans .fa a:active {
+      color: #234155;
+      text-decoration: none; }
     .nav-bar-trans .fa span {
       margin: 0 5%;
       font-family: "Raleway", sans-serif;
       font-size: 1rem;
       font-weight: 700;
-      text-transform: uppercase; }
-  .nav-bar-trans .left {
-    float: left; }
-  .nav-bar-trans .right {
-    float: right; }
+      text-transform: uppercase;
+      text-decoration: none; }
+  .nav-bar-trans .search-about {
+    display: inline-block;
+    width: 20%; }
 
 .primary-content, .secondary-content {
   background-color: #ffffff;
@@ -163,9 +168,12 @@ img {
   display: flex;
   justify-content: flex-start; }
   .sub-headline .author-info {
+    width: 20%; }
+  .sub-headline .author-info a:link, .sub-headline a:hover, .sub-headline a:visited, .sub-headline a:active {
     color: #234155;
     font-weight: 700;
-    margin: 0 2%; }
+    margin: 0 2%;
+    text-decoration: none; }
   .sub-headline .article-info {
     color: #ACB6C2;
     font-weight: 300;
@@ -201,16 +209,20 @@ img {
     font-size: 1.5rem;
     margin: 0;
     padding: 1%; }
+  .button-holder a:link, .button-holder a:active, .button-holder a:visited, .button-holder a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    width: 25%; }
   .button-holder .btn {
     background-color: #ACB6C2;
-    color: white;
+    color: #ffffff;
     font-family: "Raleway", sans-serif;
     font-size: .8rem;
     font-weight: 700;
-    margin: 0 5% 0 0;
-    padding: 1.333%;
+    margin: 0;
+    padding: 7%;
     text-align: center;
-    width: 20%; }
+    width: 100%; }
 
 .author-face {
   border-radius: 50%;
@@ -235,16 +247,21 @@ img {
       left: 0;
       top: 0;
       width: 100%; }
-  .aside-author-info .aside-author-name, .aside-author-info .aside-soc-med {
+
+.aside-author-name, .aside-soc-med {
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+  width: 100%; }
+  .aside-author-name a:link, .aside-soc-med a:link, .aside-author-name a:hover, .aside-soc-med a:hover, .aside-author-name a:visited, .aside-soc-med a:visited, .aside-author-name a:active, .aside-soc-med a:active {
     color: #234155;
-    font-weight: 700;
-    line-height: 2;
-    text-align: center;
-    width: 100%; }
-    .aside-author-info .aside-author-name a, .aside-author-info .aside-soc-med a {
-      color: #ACB6C2;
-      text-decoration: none;
-      padding: 0 2%; }
+    text-decoration: none;
+    padding: 0 2%; }
+
+.aside-soc-med a:link, .aside-soc-med a:hover, .aside-soc-med a:visited, .aside-soc-med a:active {
+  color: #ACB6C2;
+  text-decoration: none;
+  padding: 0 2%; }
 
 .advertisement {
   align-items: center;
@@ -289,6 +306,8 @@ img {
   width: 25%; }
   .post img {
     height: 100%; }
+  .post a:hover, .post a:focus .navy-filter {
+    border: 2px solid yellow; }
 
 .no-1 .navy-filter, .no-2 .navy-filter, .no-3 .navy-filter, .no-4 .navy-filter {
   background-color: rgba(24, 45, 107, 0.5);
@@ -327,17 +346,20 @@ img {
 
 .footer-nav-list {
   margin: 0 1% 0 40%;
-  width: 20%; }
+  width: 30%; }
   .footer-nav-list ul {
     display: flex;
     flex-wrap: nowrap;
     text-align: center; }
-    .footer-nav-list ul li {
-      border-right: 1px solid #ACB6C2;
-      display: inline-block;
-      padding: 2%; }
-    .footer-nav-list ul li:nth-child(4) {
-      border-right: 0; }
+    .footer-nav-list ul a:link, .footer-nav-list ul a:hover, .footer-nav-list ul a:active, .footer-nav-list ul a:visited {
+      color: #ACB6C2;
+      width: 100%; }
+      .footer-nav-list ul a:link li, .footer-nav-list ul a:hover li, .footer-nav-list ul a:active li, .footer-nav-list ul a:visited li {
+        border-right: 1px solid #ACB6C2;
+        display: inline-block;
+        padding: 5%; }
+      .footer-nav-list ul a:link li:nth-child(4), .footer-nav-list ul a:hover li:nth-child(4), .footer-nav-list ul a:active li:nth-child(4), .footer-nav-list ul a:visited li:nth-child(4) {
+        border-right: 0; }
 
 .btn:hover {
   background-color: #56A1D5; }

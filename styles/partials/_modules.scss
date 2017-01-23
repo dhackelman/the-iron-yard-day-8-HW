@@ -35,9 +35,11 @@
 
 .nav-bar-trans {
   background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   min-height: 30px;
   position: absolute;
-  overflow: hidden;
   left: 5%;
   top: 3%;
   width: 90%;
@@ -62,12 +64,9 @@
     }
   }
 
-  .left {
-    float: left;
-  }
-
-  .right {
-    float: left;
+  .search-about {
+    display: inline-block;
+    width: 20%;
   }
 
 }
@@ -94,9 +93,14 @@
   justify-content: flex-start;
 
   .author-info {
+    width: 20%;
+  }
+
+  .author-info a:link, a:hover, a:visited, a:active {
     color: $navy-ish;
     font-weight: 700;
     margin: 0 2%;
+    text-decoration: none;
   }
 
   .article-info {
@@ -143,16 +147,22 @@
     margin: 0;
     padding: 1%;
   }
+
+  a:link, a:active, a:visited, a:hover {
+    color: $white;
+    text-decoration: none;
+    width: 25%;
+  }
   .btn {
     background-color: $old-man-gray;
-    color: white;
+    color: $white;
     font-family: $primary-font;
     font-size: .8rem;
     font-weight: 700;
-    margin: 0 5% 0 0;
-    padding: 1.333%;
+    margin: 0;
+    padding: 7%;
     text-align: center;
-    width: 20%;
+    width: 100%;
   }
 }
 
@@ -184,20 +194,29 @@
       width: 100%;
     }
   }
+}
 
-  .aside-author-name, .aside-soc-med {
+.aside-author-name {
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+  width: 100%;
+
+  a:link, a:hover, a:visited, a:active {
     color: $navy-ish;
-    font-weight: 700;
-    line-height: 2;
-    text-align: center;
-    width: 100%;
-    a {
-      color: $old-man-gray;
-      text-decoration: none;
-      padding: 0 2%;
-    }
+    text-decoration: none;
+    padding: 0 2%;
   }
+}
 
+.aside-soc-med {
+  @extend .aside-author-name;
+
+  a:link, a:hover, a:visited, a:active {
+    color: $old-man-gray;
+    text-decoration: none;
+    padding: 0 2%;
+  }
 }
 
 .advertisement {
@@ -258,6 +277,10 @@
   img {
   height: 100%;
   }
+
+  a:hover, a:focus  .navy-filter {
+    border: 2px solid yellow;
+  }
 }
 
 .no-1, .no-2, .no-3, .no-4 {
@@ -284,6 +307,7 @@
   .navy-filter:hover {
     background-color: transparent;
   }
+
 
   .navy-filter:hover > .post-title {
     background-color: rgba(0,0,0, 0.7);
@@ -313,21 +337,26 @@
 
 .footer-nav-list {
   margin: 0 1% 0 40%;
-  width: 20%;
+  width: 30%;
 
   ul {
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
 
-    li {
-      border-right: 1px solid $old-man-gray;
-      display: inline-block;
-      padding: 2%;
-    }
+    a:link, a:hover, a:active, a:visited {
+      color: $old-man-gray;
+      width: 100%;
 
-    li:nth-child(4){
-      border-right: 0;
+      li {
+        border-right: 1px solid $old-man-gray;
+        display: inline-block;
+        padding: 5%;
+      }
+
+      li:nth-child(4){
+        border-right: 0;
+      }
     }
   }
 }
