@@ -8,3 +8,11 @@
 @import "partials/modules";
 //Change styles based on user interactions OR @media
 @import "partials/modules-modifiers";
+//create modular header
+@import "partials/header";
+// primary and secondary content container
+@import "partials/primary-secondary-content";
+// Posts Gallery
+@import "partials/posts-gallery";
+// Footer
+@import "partials/footer";

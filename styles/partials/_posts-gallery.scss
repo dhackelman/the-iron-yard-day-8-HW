@@ -1,0 +1,58 @@
+.posts-gallery {
+  position: relative;
+  margin: 0 auto;
+}
+
+.posts-gallery-headline {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.post {
+  margin: 0 auto;
+  width: 25%;
+
+  img {
+  height: 100%;
+  }
+
+  a:hover, a:focus  .navy-filter {
+    border: 2px solid yellow;
+  }
+}
+
+.no-1, .no-2, .no-3, .no-4 {
+  .navy-filter {
+    background-color: $navy-overlay;
+    color: $old-man-gray;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 25%;
+  }
+
+  .post-title {
+    align-self: flex-end;
+    color: $black;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+    width: 90%;
+  }
+
+  .navy-filter:hover {
+    background-color: transparent;
+  }
+
+
+  .navy-filter:hover > .post-title {
+    background-color: rgba(0,0,0, 0.7);
+    color: $white;
+    width: 100%;
+  }
+
+
+}

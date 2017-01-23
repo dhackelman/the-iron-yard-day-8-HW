@@ -97,6 +97,9 @@ img {
 .secondary-content {
   width: 40%; }
 
+.btn:hover {
+  background-color: #509bcf; }
+
 .header-image {
   background-image: url(../images/shark-wave.jpg);
   background-size: cover;
@@ -360,8 +363,5 @@ img {
         padding: 5%; }
       .footer-nav-list ul a:link li:nth-child(4), .footer-nav-list ul a:hover li:nth-child(4), .footer-nav-list ul a:active li:nth-child(4), .footer-nav-list ul a:visited li:nth-child(4) {
         border-right: 0; }
-
-.btn:hover {
-  background-color: #509bcf; }
 
 /*# sourceMappingURL=main.css.map */

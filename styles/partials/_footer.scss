@@ -1,0 +1,42 @@
+
+.footer {
+  align-items: center;
+  background-color: $navy-ish;
+  color: $old-man-gray;
+  display: flex;
+  flex-wrap: nowrap;
+  max-height: 90px;
+  width: 100%;
+
+  .logo-sm {
+    margin: 2% 2% 2% 10%;
+    width: 5%;
+  }
+
+}
+
+.footer-nav-list {
+  margin: 0 1% 0 40%;
+  width: 30%;
+
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+
+    a:link, a:hover, a:active, a:visited {
+      color: $old-man-gray;
+      width: 100%;
+
+      li {
+        border-right: 1px solid $old-man-gray;
+        display: inline-block;
+        padding: 5%;
+      }
+
+      li:nth-child(4){
+        border-right: 0;
+      }
+    }
+  }
+}

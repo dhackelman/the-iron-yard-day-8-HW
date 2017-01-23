@@ -1,0 +1,185 @@
+.primary-content, .secondary-content {
+  background-color: $white;
+  padding: 5%;
+
+  h2 {
+    color: $navy-ish;
+    line-height: .8;
+    text-transform: capitalize;
+  }
+
+  p {
+    margin: 5% auto;
+  }
+}
+
+.sub-headline {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+
+  .author-info {
+    width: 20%;
+  }
+
+  .author-info a:link, a:hover, a:visited, a:active {
+    color: $navy-ish;
+    font-weight: 700;
+    margin: 0 2%;
+    text-decoration: none;
+  }
+
+  .article-info {
+    color: $old-man-gray;
+    font-weight: 300;
+    margin: 0 2%;
+  }
+
+  .catch-blue-overlay {
+    margin: 2%;
+    position: relative;
+    width: 6%;
+
+    .author-blue-overlay {
+      background-color: $navy-overlay;
+      border-radius: 50%;
+      height: 88%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+.blockquote-khaled {
+  border-left: 3px solid $old-man-gray;
+  color: $shallow-water;
+  font-size: 2rem;
+  margin: 2% 0;
+  padding-left: 5%;
+  text-transform: uppercase;
+}
+
+.button-holder {
+  align-items: center;
+  display: flex;
+  width: 100%;
+
+  .fa {
+    background-color: $navy-ish;
+    color: $white;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1%;
+  }
+
+  a:link, a:active, a:visited, a:hover {
+    color: $white;
+    text-decoration: none;
+    width: 25%;
+  }
+  .btn {
+    background-color: $old-man-gray;
+    color: $white;
+    font-family: $primary-font;
+    font-size: .8rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 7%;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.author-face {
+  border-radius: 50%;
+  margin: 0;
+  width: 100%;
+}
+
+.aside-author-info {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 15%;
+
+  .catch-blue-overlay {
+    margin: 2%;
+    position: relative;
+    width: 30%;
+
+    .author-blue-overlay {
+      background-color: $navy-overlay;
+      border-radius: 50%;
+      height: 95%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+.aside-author-name {
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+  width: 100%;
+
+  a:link, a:hover, a:visited, a:active {
+    color: $navy-ish;
+    text-decoration: none;
+    padding: 0 2%;
+  }
+}
+
+.aside-soc-med {
+  @extend .aside-author-name;
+
+  a:link, a:hover, a:visited, a:active {
+    color: $old-man-gray;
+    text-decoration: none;
+    padding: 0 2%;
+  }
+}
+
+.advertisement {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5% auto;
+  width: 90%;
+
+  .catch-blue-overlay {
+    position: relative;
+
+    span {
+      bottom: -5%;
+      color: $old-man-gray;
+      position: absolute;
+      right: 0;
+      text-decoration: underline;
+    }
+  }
+
+  .blue-ad {
+    width: 100%;
+  }
+
+  .blue-ad-overlay {
+    background-color: $navy-overlay;
+    position: absolute;
+    height: 98%;
+    top: 0;
+    left:0;
+    width: 100%;
+  }
+}
+
+.sidebar {
+  color: $old-man-gray;
+  margin-top: 15%;
+}
